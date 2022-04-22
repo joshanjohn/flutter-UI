@@ -10,7 +10,7 @@ class Task {
   Color? btnColor;
   num? left;
   num? done;
-  bool? isLast;
+  bool isLast;
 
   Task({
     this.iconData,
