@@ -24,6 +24,18 @@ class HomePage extends StatelessWidget {
           Expanded(child: Tasks())
         ],
       ),
+      bottomNavigationBar: _buildBottomNavigation(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          size: 34,
+        ),
+        hoverColor: Colors.black87,
+        backgroundColor: Colors.black,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      ),
     );
   }
 
@@ -62,6 +74,50 @@ class HomePage extends StatelessWidget {
           ),
         )
       ],
+    );
+  }
+
+  Widget _buildBottomNavigation() {
+    return Container(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.2),
+              spreadRadius: 5,
+              blurRadius: 20,
+            )
+          ]),
+      child: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(10),
+          topRight: Radius.circular(10),
+        ),
+        child: BottomNavigationBar(
+          backgroundColor: Colors.white,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedItemColor: Colors.blueAccent,
+          unselectedItemColor: Colors.grey.withOpacity(0.5),
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home_rounded,
+                  size: 26,
+                ),
+                label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person_rounded,
+                  size: 26,
+                ),
+                label: 'Person'),
+          ],
+        ),
+      ),
     );
   }
 }
