@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:task_app/models/tasks.dart';
+import 'package:task_app/screens/detail/details.dart';
 import 'package:task_app/screens/home/home.dart';
 
 void main() {
