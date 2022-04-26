@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
           Expanded(child: Tasks())
         ],
       ),
-      bottomNavigationBar: _buildBottomNavigation(),
+      bottomNavigationBar: buildBottomNavigation(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildBottomNavigation() {
+  Widget buildBottomNavigation() {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(

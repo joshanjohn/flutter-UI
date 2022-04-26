@@ -66,6 +66,26 @@ class Task {
               'title': 'Meet with clint Parker',
               'slot': '',
               'tlColor': kYellowDark,
+              'bgcolor': kYellowLight
+            },
+            {
+              'time': '2:00 am',
+              'title': '',
+              'slot': '',
+              'tlColor': Colors.grey.withOpacity(0.3),
+            },
+            {
+              'time': '3:00 am',
+              'title': '',
+              'slot': '',
+              'tlColor': Colors.grey.withOpacity(0.3),
+            },
+            {
+              'time': '4:00 am',
+              'title': 'visit Wakanda Beach',
+              'slot': '4:00 - 5:00 am',
+              'tlColor': kBlueDark,
+              'bgcolor': kBlueLight,
             },
           ]),
       Task(

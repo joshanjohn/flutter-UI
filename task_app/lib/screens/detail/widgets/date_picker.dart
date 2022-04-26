@@ -8,16 +8,15 @@ class DatePicker extends StatefulWidget {
 }
 
 class _DatePickerState extends State<DatePicker> {
-  final weekList = ['sun', 'mon', 'tue', 'wed', 'thus', 'fri', 'sat'];
+  final weekList = ['Sun', 'Mon', 'Tue', 'Wed', 'Thus', 'Fri', 'Sat'];
   final dayList = ['24', '25', '26', '27', '28', '29', '30', '31'];
   var selected = 4;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 5),
-      margin: EdgeInsets.symmetric(horizontal: 5),
-      height: 100,
+      padding: EdgeInsets.symmetric(vertical: 20),
+      height: 120,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
@@ -35,7 +34,7 @@ class _DatePickerState extends State<DatePicker> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    borderRadius: BorderRadius.all(Radius.circular(30)),
                     color:
                         selected == index ? Colors.grey.withOpacity(0.2) : null,
                   ),
@@ -53,7 +52,7 @@ class _DatePickerState extends State<DatePicker> {
                         ),
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 5,
                       ),
                       Text(
                         '${dayList[index]}',

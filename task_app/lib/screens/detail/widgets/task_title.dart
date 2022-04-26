@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class taskTitle extends StatelessWidget {
-  const taskTitle({Key? key}) : super(key: key);
+  taskTitle({Key? key}) : super(key: key);
+  TextStyle taskTitleStyle =
+      const TextStyle(fontSize: 28, fontWeight: FontWeight.w600);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +16,7 @@ class taskTitle extends StatelessWidget {
             padding: const EdgeInsets.all(15.0),
             child: Text(
               'Task',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+              style: GoogleFonts.satisfy(textStyle: taskTitleStyle),
             ),
           ),
           Padding(
