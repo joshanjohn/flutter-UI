@@ -3,9 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:task_app/models/tasks.dart';
 import 'package:task_app/screens/detail/details.dart';
 import 'package:task_app/screens/home/home.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() {
-  runApp(const MyApp());
+  // runApp(
+  //   DevicePreview(
+  //     builder: (context) => MyApp(), // Wrap your app
+  //   ),
+  // );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
